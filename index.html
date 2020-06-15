@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>My blog - getting started in game dev</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-    .page-container {
-    display: grid;
-    grid-template-columns: auto 15em;
-    }
-    .grid-container {
-    display: grid;
-    grid-template-columns: 10em auto;
-    align-items: center;
-    }
-    .diary-date {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 30px;
-    text-align: center;
-    }
-    .diary-entry {
-    background-color: rgba(255, 251, 213, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, sans-serif;
-    }
+        .page-container {
+            display: grid;
+            grid-template-columns: auto 15em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 10em auto;
+            align-items: center;
+        }
+
+        .diary-date {
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .diary-entry {
+            background-color: rgba(255, 251, 213, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, sans-serif;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>A game dev diary</h1>
+    <h1>A game dev diary</h1>
 
-<p>An everyday entry of my progress towards creating my first game and beyond</p>
-<div class="page-container">
-    
-    <div class="grid-container">
-        <div class="diary-date">5/6/2020</div>
-        <div class="diary-entry">
-            <p>5th of June 2020 is the first entry into this barebone game dev diary. I decided to create this to expand my writing and force myself to understand enough to explain game development into the diary. Hey maybe someday I'll be nostalgic when reading this diary.</p>
-            <p>At this moment in time, I decided too create a custom game in Dota2. Heres the reason why:</p>
-            <ul>
-                <li>Im familiar with Dota2 mechanics. As a starting project I think something familiar will be easier to get into</li>
-                <li>Creating a game using Dota2 workshop tools might be limited, but I think thats a good thing for a beginner like me who know nothing about game dev</li>
-            </ul>
+    <p>An everyday entry of my progress towards creating my first game and beyond</p>
+    <div class="page-container">
+
+        <div class="grid-container">
+            <div class="diary-date">5/6/2020</div>
+            <div class="diary-entry">
+                <p>5th of June 2020 is the first entry into this barebone game dev diary. I decided to create this to
+                    expand my writing and force myself to understand enough to explain game development into the diary.
+                    Hey maybe someday I'll be nostalgic when reading this diary.</p>
+                <p>At this moment in time, I decided too create a custom game in Dota2. Heres the reason why:</p>
+                <ul>
+                    <li>Im familiar with Dota2 mechanics. As a starting project I think something familiar will be
+                        easier to get into</li>
+                    <li>Creating a game using Dota2 workshop tools might be limited, but I think thats a good thing for
+                        a beginner like me who know nothing about game dev</li>
+                </ul>
+            </div>
+            <div class="diary-date">7/6/2020</div>
+            <div class="diary-entry">
+                <p>At current rate, Im playing games much more than I learn about creating them. Right now I dont have
+                    any plan or strategy for learning about game development. So my first strategy is to create a
+                    schedule. 7am-9am everyday will be the designated time towards game development. I can still use
+                    other time for game dev, but this designated time will purely be for game dev, so that I at least
+                    spend 2 hours a day toward my goal. And at the end of the session I will update this diary entry
+                </p>
+            </div>
+            <div class="diary-date">8/6/2020</div>
+            <div class="diary-entry">Familiarizing with Dota 2 workshop. learned how to modify map, units and abilities
+                using Lua. Really need to refer to dota 2 API page alot. the console is a useful place to see whats
+                happening.</div>
+            <div class="diary-date">9/6/2020</div>
+            <div class="diary-entry">
+                <p>learn how to create and modify projectiles. "OnXxxx" is functions that listen to specific event
+                    occurence. reference can be found on the dev site.</p>
+                <p>To create custom ability, define the properties in npc_custom_abilities.txt. then create a separate
+                    .lua file for the custom abilities behaviour.</p>
+            </div>
+            <div class="diary-date">10/6/2020</div>
+            <div class="diary-entry">
+                <p>still on creating abilites, creating and modifying projectile. and a little crash course course on
+                    Lua. The most famous Lua thing is apparently index start with 1.</p>
+            </div>
+            <div class="diary-date">11/6/2020</div>
+            <div class="diary-entry">
+                <p>Watched tutorial on modifiers, thinker, game event, sound and advanced map creation</p>
+            </div>
+            <div class="diary-date">12/6/2020</div>
+            <div class="diary-entry">
+                <p>Not much done today.I get easily distracted and bored. How do people stay focused when working
+                    alone????</p>
+            </div>
+            <div class="diary-date">15/6/2020</div>
+            <div class="diary-entry">
+                <p>VRF - Source 2 resource viewer is a useful piece of software if you want to refer to other Dota 2
+                    custom games(.vpk files). Downloaded Dota 2 custom game is located at .. Program Files
+                    (x86)\Steam\steamapps\workshop\content\570.. Since the name of the file are just random numbers, you can figure out which is which best on the last updated date. Recently I play Custom Hero Clash
+                    alot, so viewing the source code for it made for a better understanding of the game and how its being made
+                    created</p>
+                <p> On that note I finished watching Pohka dev tutorial. It is very helpful but somehow I still dont know where to start. Am I not motivated enough??</p>
+            </div>
         </div>
-        <div class="diary-date">7/6/2020</div>  
-        <div class="diary-entry">
-            <p>At current rate, Im playing games much more than I learn about creating them. Right now I dont have any plan or strategy for learning about game development. So my first strategy is to create a schedule. 7am-9am everyday will be the designated time towards game development. I can still use other time for game dev, but this designated time will purely be for game dev, so that I at least spend 2 hours a day toward my goal. And at the end of the session I will update this diary entry </p>
+        <div class="diary-date">
+            <a href="resource.html">Resources</a>
         </div>
-        <div class="diary-date">8/6/2020</div>
-        <div class="diary-entry">Familiarizing with Dota 2 workshop. learned how to modify map, units and abilities using Lua. Really need to refer to dota 2 API page alot. the console is a useful place to see whats happening.</div>  
-        <div class="diary-date">9/6/2020</div>
-        <div class="diary-entry">
-            <p>learn how to create and modify projectiles. "OnXxxx" is functions that listen to specific event occurence. reference can be found on the dev site.</p>
-            <p>To create custom ability, define the properties in npc_custom_abilities.txt. then create a separate .lua file for the custom abilities behaviour.</p>
-        </div>
-        <div class="diary-date">10/6/2020</div>  
-        <div class="diary-entry">
-            <p>still on creating abilites, creating and modifying projectile. and a little crash course course on Lua. The most famous Lua thing is apparently index start with 1.</p>
-        </div>
-        <div class="diary-date">11/6/2020</div>  
-        <div class="diary-entry">
-            <p>Watched tutorial on modifiers, thinker, game event, sound and advanced map creation</p>
-        </div>
-        <div class="diary-date">12/6/2020</div>  
-        <div class="diary-entry">
-            <p>Not much done today.I get easily distracted and bored. How do people stay focused when working alone????</p>
-        </div>
+
     </div>
-    <div class="diary-date">
-        <a href="resource.html">Resources</a>
-    </div>
-    
-</div>
 </body>
-</html>
 
+</html>
